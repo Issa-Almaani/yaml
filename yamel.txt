@@ -1,0 +1,24 @@
+# Server Configuration
+server:
+  name: my-simple-server
+  environment: production
+  ip_address: 192.168.1.1
+  port: 8080
+
+# Services
+services:
+  - name: web
+    status: active
+    version: 1.0.0
+  - name: database
+    status: inactive
+    version: 3.5.2
+
+# Users
+users:
+  admin:
+    username: admin_user
+    email: admin@example.com
+  developer:
+    username: dev_user
+    email: dev@example.com
